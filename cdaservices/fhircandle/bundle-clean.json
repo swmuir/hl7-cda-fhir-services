@@ -1,0 +1,3235 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "code": "SUBSETTED",
+        "display": "Resource encoded in summary mode"
+      }
+    ]
+  },
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "2.16.840.1.113883.6.238",
+                  "code": "2106-3",
+                  "display": "white"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "white"
+              },
+              {
+                "url": "detailed",
+                "valueCoding": {
+                  "system": "2.16.840.1.113883.6.238",
+                  "code": "2106-3",
+                  "display": "white"
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "system": "2.16.840.1.113883.6.238",
+                  "code": "2186-5",
+                  "display": "non-hispanic"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "non-hispanic"
+              },
+              {
+                "url": "detailed",
+                "valueCoding": {
+                  "system": "2.16.840.1.113883.6.238",
+                  "code": "2186-5",
+                  "display": "non-hispanic"
+                }
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.19.5",
+            "value": "879fcedc-0be0-02af-5ee9-d943e78e7c02"
+          }
+        ],
+        "name": [
+          {
+            "family": "Murazik203",
+            "given": [
+              "Stanton715"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1986-05-03",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "116 Stark Drive"
+            ],
+            "city": "Springfield",
+            "state": "Massachusetts",
+            "postalCode": "01128"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "en-US"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "7a1d9971-bb6e-dd5d-258a-05ed280ede18"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "70274-6",
+              "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+            }
+          ],
+          "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+        },
+        "effectiveDateTime": "2016-04-09",
+        "valueQuantity": {
+          "value": 1,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Generalized anxiety disorder 7 item (GAD-7)"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "e3e8e9d6-d266-3a16-b095-c8cf7bc2d6c6"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2016-04-09",
+        "valueQuantity": {
+          "value": 0,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "86f4c946-15e7-d64c-dde8-47c05d7b2f2b"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2093-3",
+              "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol [Mass/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2017-04-15",
+        "valueQuantity": {
+          "value": 195.81,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "cc173df2-2a38-7f30-c457-04344303b94a"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ],
+          "text": "Triglycerides"
+        },
+        "effectiveDateTime": "2017-04-15",
+        "valueQuantity": {
+          "value": 138.14,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "f0a6bcbe-66ea-8856-a1a9-834a1755cccf"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "Low Density Lipoprotein Cholesterol"
+        },
+        "effectiveDateTime": "2017-04-15",
+        "valueQuantity": {
+          "value": 111.03,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "d49c7ab0-d68b-2020-7726-4c57ba18c756"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2017-04-15",
+        "valueQuantity": {
+          "value": 57.16,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "4b6420bc-108c-77ba-d59b-05b3754a87c4"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2017-04-15",
+        "valueQuantity": {
+          "value": 2,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "bfbb81f3-e2a6-4dd8-a1ff-5eb107526a46"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "70274-6",
+              "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+            }
+          ],
+          "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+        },
+        "effectiveDateTime": "2018-04-21",
+        "valueQuantity": {
+          "value": 3,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Generalized anxiety disorder 7 item (GAD-7)"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "d2be11bc-6352-a3ea-476a-1f69ef0b0c08"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2018-04-21",
+        "valueQuantity": {
+          "value": 1,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "14314011-1a32-11dd-6b80-56b385f8b315"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Leukocytes [#/volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 6.007322193532126,
+          "unit": "10*3/uL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "ae1f3638-fc8e-b299-c42b-7b1cbe8c01d9"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 5.134194817504188,
+          "unit": "10*6/uL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "72916fa4-bcb0-ed00-8d4c-24610905a83d"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Hemoglobin [Mass/volume] in Blood"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 14.585123001390059,
+          "unit": "g/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "daaee574-f50a-18ec-d75f-2e08ea3438cd"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "4544-3",
+              "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+            }
+          ],
+          "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 43.56531290030411,
+          "unit": "%"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "d0c47203-5372-99c9-148c-68727e054967"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 91.12572952930371,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "af9654d0-eb6b-8f1a-a991-48f1561ffadb"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "785-6",
+              "display": "MCH [Entitic mass] by Automated count"
+            }
+          ],
+          "text": "MCH [Entitic mass] by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 30.258046106514975,
+          "unit": "pg"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "22b229da-413f-97e3-a1bc-638cfc9b3279"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "786-4",
+              "display": "MCHC [Mass/volume] by Automated count"
+            }
+          ],
+          "text": "MCHC [Mass/volume] by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 35.30283883919114,
+          "unit": "g/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "2ed1216f-41bd-59cb-9e79-0a25ce4a7e28"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "21000-5",
+              "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 39.58463524870163,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "5c809c21-1616-b61a-6d02-4d4e82c096d6"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "777-3",
+              "display": "Platelets [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelets [#/volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 410.6111573931874,
+          "unit": "10*3/uL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "9a14f268-5990-05db-cb97-795047cc965d"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "32207-3",
+              "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 453.6323909606911,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "b854b204-de09-abcf-1252-160fa9be0d3b"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "32623-1",
+              "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 10.840505179984874,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "734651d4-a2c5-426f-3931-a65d2581da52"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "76504-0",
+              "display": "Total score [HARK]"
+            }
+          ],
+          "text": "Total score [HARK]"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 0,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "a5ebee6f-a599-e58c-bfe5-3baeef9b7f50"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2019-04-27",
+        "valueQuantity": {
+          "value": 0,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "7398fcd8-88e4-69a8-9ba3-620763e96ccf"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2093-3",
+              "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol [Mass/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2020-05-02",
+        "valueQuantity": {
+          "value": 188.4,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "15a1262e-352e-be17-af74-be57564b89c9"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ],
+          "text": "Triglycerides"
+        },
+        "effectiveDateTime": "2020-05-02",
+        "valueQuantity": {
+          "value": 118.7,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "88cdf9b2-deea-992c-46a1-9be0d4bb5cdf"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "Low Density Lipoprotein Cholesterol"
+        },
+        "effectiveDateTime": "2020-05-02",
+        "valueQuantity": {
+          "value": 107.46,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "987aa4a5-ba42-ef88-0939-7e58081cf217"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2020-05-02",
+        "valueQuantity": {
+          "value": 57.2,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "ccb04c5c-afc1-b110-1f96-863b35301788"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "70274-6",
+              "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+            }
+          ],
+          "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+        },
+        "effectiveDateTime": "2020-05-02",
+        "valueQuantity": {
+          "value": 2,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Generalized anxiety disorder 7 item (GAD-7)"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "620ac4b2-ef08-f79f-961e-4e81bc7978f8"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2020-05-02",
+        "valueQuantity": {
+          "value": 2,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "42bc0104-4b71-920a-9ed3-f743c85c7568"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "70274-6",
+              "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+            }
+          ],
+          "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+        },
+        "effectiveDateTime": "2021-05-08",
+        "valueQuantity": {
+          "value": 1,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Generalized anxiety disorder 7 item (GAD-7)"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "93b1d8e5-0dfc-79dd-6232-2a887cfb50e4"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2021-05-08",
+        "valueQuantity": {
+          "value": 1,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "3e6aa070-f8ef-b052-7c35-dc304375c50d"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2022-05-14",
+        "valueQuantity": {
+          "value": 1,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "6a6fdc72-a9c5-4ffa-075d-a44d558d14f0"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2093-3",
+              "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol [Mass/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2023-05-20",
+        "valueQuantity": {
+          "value": 127.73,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "37815f1f-a392-dc50-4e6b-aea09d8f55c8"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ],
+          "text": "Triglycerides"
+        },
+        "effectiveDateTime": "2023-05-20",
+        "valueQuantity": {
+          "value": 118.36,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "2ade98f0-6050-49db-4022-221e54849232"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "Low Density Lipoprotein Cholesterol"
+        },
+        "effectiveDateTime": "2023-05-20",
+        "valueQuantity": {
+          "value": 48.96,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "5e4242f5-23b3-f9b0-0689-265ed1a707fb"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2023-05-20",
+        "valueQuantity": {
+          "value": 55.09,
+          "unit": "mg/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Lipid panel with direct LDL - Serum or Plasma"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "9a574f9b-55fd-d60a-81dd-1968abcd0c89"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "70274-6",
+              "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+            }
+          ],
+          "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+        },
+        "effectiveDateTime": "2023-05-20",
+        "valueQuantity": {
+          "value": 0,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Generalized anxiety disorder 7 item (GAD-7)"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "2174ae85-2468-d7fb-40fd-19801a4092b1"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Leukocytes [#/volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 7.6703352962572,
+          "unit": "10*3/uL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "fd7105a3-6b46-0adf-f006-3d85965fca7c"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 4.178302327906416,
+          "unit": "10*6/uL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "bb643c25-1494-0bf7-6bba-f62758282522"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Hemoglobin [Mass/volume] in Blood"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 13.035589673591915,
+          "unit": "g/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "0c2507d1-4941-6c7f-0bb5-57b8db9b2b99"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "4544-3",
+              "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+            }
+          ],
+          "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 48.329306670282584,
+          "unit": "%"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "65df4ced-a43a-b106-b852-0e6f6c07d4c4"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 81.01715549846632,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "7af0a4dc-9332-2d08-5c59-ab0b5b7bc928"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "785-6",
+              "display": "MCH [Entitic mass] by Automated count"
+            }
+          ],
+          "text": "MCH [Entitic mass] by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 27.824006909503435,
+          "unit": "pg"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "b1c9dada-2012-509b-73b0-2d12b971effa"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "786-4",
+              "display": "MCHC [Mass/volume] by Automated count"
+            }
+          ],
+          "text": "MCHC [Mass/volume] by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 33.22374782304184,
+          "unit": "g/dL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "1d9c55cf-0954-5fbf-e24b-c648f330c2cf"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "21000-5",
+              "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 45.455938757526795,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "c02d6e7e-2a79-8e2d-d954-b5623d10baa0"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "777-3",
+              "display": "Platelets [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelets [#/volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 416.62995890394393,
+          "unit": "10*3/uL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "78ce776c-c82a-63b7-2ea3-e621d5ac53e0"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "32207-3",
+              "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 389.7861441394694,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "2d50d05a-77e8-ec99-5975-536df11cf8ca"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "32623-1",
+              "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 11.561164863527114,
+          "unit": "fL"
+        },
+        "note": [
+          {
+            "text": "\n              \n            CBC panel - Blood by Automated count"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "1b661ae2-1dc2-ad57-f871-eead85d44a6d"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "76504-0",
+              "display": "Total score [HARK]"
+            }
+          ],
+          "text": "Total score [HARK]"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 0,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "e2631537-7ab4-e488-f079-0099c9bb0b38"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2024-05-25",
+        "valueQuantity": {
+          "value": 2,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "248c9211-c19b-a221-dd9e-fe5a19e2162a"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "55758-7",
+              "display": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]"
+        },
+        "effectiveDateTime": "2025-05-31",
+        "valueQuantity": {
+          "value": 4,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "SUBSETTED",
+              "display": "Resource encoded in summary mode"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "f409838d-ed1c-f995-f9bd-8d7c17edd890"
+          },
+          {
+            "system": "CDADocument",
+            "value": "Stanton715_Murazik203_879fcedc-0be0-02af-5ee9-d943e78e7c02.xml"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.1",
+              "code": "44261-6",
+              "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+            }
+          ],
+          "text": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+        },
+        "effectiveDateTime": "2025-05-31",
+        "valueQuantity": {
+          "value": 26,
+          "unit": "{score}"
+        },
+        "note": [
+          {
+            "text": "\n              \n            PHQ-9 quick depression assessment panel [Reported.PHQ]"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}

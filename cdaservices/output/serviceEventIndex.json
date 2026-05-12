@@ -1,0 +1,9 @@
+{
+  "183460006 | Outpatient encounter" : [ {
+    "file" : "Adrian111_Mayer370_8fc32dfb-7448-ea9d-7bab-f646b032bc77.xml",
+    "typeCode" : "183460006",
+    "typeDisplay" : "Outpatient encounter",
+    "date" : "1935-06-25",
+    "dateHigh" : "1987-06-02"
+  } ]
+}

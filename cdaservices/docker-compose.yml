@@ -1,0 +1,145 @@
+version: '3.8'
+
+services:
+
+  fhir-candle:
+    image: ghcr.io/fhir/fhir-candle:latest
+    ports:
+      - "8585:5826"
+    environment:
+      - Validation__Enabled=false	  
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8585/fhir/r4/metadata"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mdix-cdaservices:
+    image: cdaservices-app:latest
+    mem_reservation: 4048m
+    container_name: mdix.cdaservice
+    ports:
+      - "8989:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/cda/ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mdix-transformation:
+    image: mdmiservices/imatcda2fhir:latest
+    mem_reservation: 4048m
+    container_name: mdix.transformation
+    environment:
+      - JAVA_TOOL_OPTIONS=-Xmx6048m
+      - LOGGING_LEVEL_ROOT=INFO
+      - LOGGING_LEVEL_MDMI=INFO
+      - FHIR_TERMINOLOGY_URL=http://host.docker.internal:8080/fhir
+    ports:	
+      - "8282:8282"
+    healthcheck:
+#      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8282/mdmi/transformation"]	
+      test: ["CMD", "curl", "-f", "http://localhost:8282/mdmi/transformation"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+  patient-tracker:
+    image: patient-tracker-app
+    ports:
+      - "3000:3000"
+    environment:
+      HOST: 0.0.0.0
+    volumes:
+      - ./output/unique_observation_codes.json:/app/src/data/unique_observation_codes.json:ro
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    depends_on:
+      step5:
+        condition: service_completed_successfully
+
+  document-index:
+    image: document-index-app
+    ports:
+      - "3001:3000"
+    environment:
+      HOST: 0.0.0.0
+    volumes:
+      - ./output/serviceEventIndex.json:/app/src/serviceEventIndex.json:ro
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    depends_on:
+      step6:
+        condition: service_completed_successfully
+
+#  document-search:
+#    image: documentsearch:latest
+#    ports:
+#      - "3002:3000"
+#    environment:
+#      HOST: 0.0.0.0
+#    stdin_open: true
+#    tty: true
+#    restart: unless-stopped
+#    depends_on:
+#      step6:
+#        condition: service_completed_successfully
+
+  step1:
+    build: ./send_document
+    container_name: send_document
+    volumes:
+      - ./ccda2:/app/TestData
+    depends_on:
+      mdix-cdaservices:
+        condition: service_healthy
+      mdix-transformation:
+        condition: service_healthy
+
+  step2:
+    build: ./get_document
+    container_name: get_document_step2
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step1:
+        condition: service_completed_successfully
+
+  step3:
+    build: ./cda2fhir
+    container_name: get_document_step3
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step2:
+        condition: service_completed_successfully
+
+  step4:
+    build: ./fhircandle
+    container_name: get_document_step4
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step3:
+        condition: service_completed_successfully
+
+  step5:
+    build: ./get_codes
+    container_name: get_codes_step5
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step4:
+        condition: service_completed_successfully
+
+  step6:
+    build: ./get_document_index
+    container_name: get_document_index_step6
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step4:
+        condition: service_completed_successfully

@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+
+  fhir-candle:
+    image: ghcr.io/fhir/fhir-candle:latest
+    ports:
+      - "8585:5826"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8585/fhir/r4/metadata"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  springboot:
+    image: cdaservices-app
+    mem_reservation: 4048m
+    container_name: mdix.cdaservice
+    network_mode: default
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/cda/ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  sml-mdmi:
+    image: mdmiservices/cda2fhirx:latest
+    mem_reservation: 4048m
+    container_name: apex-mdmi
+    environment:
+      - JAVA_TOOL_OPTIONS=-Xmx6048m
+      - LOGGING_LEVEL_ROOT=INFO
+      - LOGGING_LEVEL_MDMI=INFO
+    network_mode: default
+    ports:
+      - "8282:8282"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8282/mdmi/transformation"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: always
+    # volumes:
+    #   - ...
+
+  step1:
+    build: ./send_document
+    container_name: send_document
+    network_mode: default
+    volumes:
+      - ./TestData:/app/TestData
+    depends_on:
+      springboot:
+        condition: service_healthy
+      sml-mdmi:
+        condition: service_healthy
+#      fhir-candle:
+#        condition: service_healthy
+
+  step2:
+    build: ./get_document
+    container_name: get_document_step2
+    network_mode: default
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step1:
+        condition: service_completed_successfully
+
+  step3:
+    build: ./cda2fhir
+    container_name: get_document_step3
+    network_mode: default
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step2:
+        condition: service_completed_successfully
+
+  step4:
+    build: ./fhircandle
+    container_name: get_document_step4
+    network_mode: default
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      step3:
+        condition: service_completed_successfully

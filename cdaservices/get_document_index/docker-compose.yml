@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+#  fhir-candle:
+#    image: ghcr.io/fhir/fhir-candle:latest
+#    ports:
+#      - "8585:5826"
+
+  step9:
+    build: .
+    container_name: postfhirxxx
+    network_mode: default
+    volumes:
+      - ./output:/app/output
+#    depends_on:
+#      springboot:
+#        condition: service_healthy

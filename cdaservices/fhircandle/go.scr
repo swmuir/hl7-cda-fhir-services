@@ -1,0 +1,6 @@
+docker run \
+  -p 8585:5826 \
+  -e Logging__LogLevel__Default=Trace \
+  -e Logging__LogLevel__Microsoft=Trace \
+  -e Logging__LogLevel__System=Trace \
+  ghcr.io/fhir/fhir-candle:latest
